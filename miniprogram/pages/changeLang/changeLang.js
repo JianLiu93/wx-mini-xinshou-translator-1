@@ -1,18 +1,18 @@
 // changeLang.js
-// const app = getApp()
-const { envList } = require('../../envList.js');
+// const { envList } = require('../../envList.js');
 const app = getApp();
 
 Page({
   data: {
-    languageList: app.globalData.langList,
+    langList: app.globalData.langList,
     curLang: {}
   },
 
-  onShow: function() {
-    this.setData({ curLang: app.globalData.curLang })
+  onShow() {
+    this.setData({ curLang: app.globalData.curLang });
   },
-  onTapItem: function(e) {
+
+  onTapItem(e) {
     let langObj = e.currentTarget.dataset;
     wx.setStorageSync('language', langObj);
     app.globalData.curLang = langObj;

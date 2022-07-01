@@ -1,7 +1,10 @@
 // index.js
-// const app = getApp()
+// const { envList } = require('../../envList.js');
+const { translate } = require('../../utils/api.js');
+const { formatTime } = require('../../utils/formatTime.js');
 const app = getApp();
-const { envList } = require('../../envList.js');
+
+const maxLength = 20;
 
 Page({
   data: {
@@ -42,13 +45,14 @@ Page({
 
   onConfirm() {
     if(!this.data.query) return;
-    // translate(this.data.query, {from: 'auto', to: this.data.curLang.lang}).then(res=>{
-    //   this.setData({'result': res.trans_result})
+    translate(this.data.query, {from: 'auto', to: this.data.curLang.lang}
+    ).then(res=>{
+      this.setData({'result': res.trans_result});
 
-    //   let history = wx.getStorageSync('history')||[]
-    //   history.unshift({ query: this.data.query, result: res.trans_result[0].dst})
-    //   history.length = history.length > 10 ? 10 : history.length
-    //   wx.setStorageSync('history', history)
-    // })
+      let history = wx.getStorageSync('history') || [];
+      history.unshift({ query: this.data.query, result: res.trans_result[0].dst});
+      history.length = history.length > maxLength ? maxLength : history.length;
+      wx.setStorageSync('history', history);
+    });
   }
 });

@@ -1,9 +1,9 @@
 /**changeLang.wxss**/
 
 .container {
-  padding-top: 54rpx;
   background-color: #f8f8f8;
   padding-bottom: 60rpx;
+  padding-top: 0;
 }
 
 .lang-list {
@@ -12,16 +12,18 @@
 }
 
 .title {
+  width: 100%;
   background: #fff;
   border-bottom: 1px solid #ececec;
-  padding: 20rpx 40rpx;
-  color: #aaa;
+  padding: 50rpx 40rpx 20rpx 40rpx;
+  color: #666;
   font-size: 28rpx;
   font-weight: 500;
   font-family: PingFang SC;
 }
 
 .item {
+  width: 100%;
   padding-left: 40rpx;
   background-color: #fff;
 }

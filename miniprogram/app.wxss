@@ -1,4 +1,12 @@
 /**app.wxss**/
+page {
+  box-sizing: border-box;
+}
+
+view {
+  box-sizing: border-box;
+}
+
 .container {
   height: 100vh;
   font-size: 30rpx;
@@ -6,7 +14,6 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  box-sizing: border-box;
   color: #333;
   background: #f6f6f6;
 }
