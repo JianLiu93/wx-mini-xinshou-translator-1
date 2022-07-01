@@ -1,0 +1,47 @@
+/**changeLang.wxss**/
+
+.container {
+  padding-top: 54rpx;
+  background-color: #f8f8f8;
+  padding-bottom: 60rpx;
+}
+
+.lang-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  background: #fff;
+  border-bottom: 1px solid #ececec;
+  padding: 20rpx 40rpx;
+  color: #aaa;
+  font-size: 28rpx;
+  font-weight: 500;
+  font-family: PingFang SC;
+}
+
+.item {
+  padding-left: 40rpx;
+  background-color: #fff;
+}
+
+.item-inner {
+  padding:  20rpx 40rpx 20rpx 0;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #ececec;
+}
+
+.item .txt {
+  flex: 1;
+}
+
+.item .icon {
+  margin-left: auto;
+  color: #aaa;
+}
+
+.item:nth-child(2) .item-inner {
+  border-top: none;
+}

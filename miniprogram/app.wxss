@@ -1,0 +1,38 @@
+/**app.wxss**/
+.container {
+  height: 100vh;
+  font-size: 30rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+  color: #333;
+  background: #f6f6f6;
+}
+
+.footer {
+  padding-bottom: 20rpx;
+  flex: 1;
+  align-self: center;
+  display: flex;
+  align-items: flex-end;
+  font-size: 28rpx;
+  color: #666;
+}
+
+.view-hover {
+  background-color: #f3f3f3!important;
+}
+
+button {
+  background: initial;
+}
+
+button:focus{
+  outline: 0;
+}
+
+button::after{
+  border: none;
+}

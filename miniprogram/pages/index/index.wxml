@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<view class="container">
+
+  <view class="title">中文与多种语言互译，信手拈来，学习效率利器</view>
+
+  <view class="translate">
+    <navigator url="/pages/changeLang/changeLang" hover-class="navigator-hover">
+      <block>
+      <text class="first-bar">到{{curLang.tag}}</text>
+      <text class="icon">icon</text>
+      </block>
+    </navigator>
+  <!-- <image wx:if="{{power.showItem}}" class="power_info_less" src="../../images/arrow.svg"></image> -->
+  </view>
+
+  <view class="input-area">
+    <text class="icon" hidden="{{hideClearBtn}}" bind:tap="onTapClose"></text>
+    <view class="textarea-wrap">
+      <textarea id="" placeholder="输入或复制文字，即刻翻译" placeholder-style="color:#c0c4cc"
+      value="{{query}}" bind:input="onInput" bind:confirm="onConfirm" bind:blur="onConfirm"></textarea>
+    </view>
+  </view>
+
+  <view class="output-area">
+    <view class="text-title">译文</view>
+    <view class="text-result" wx:for="{{result}}" wx:key="index">
+      <text selectable="{{true}}">{{item.dst}}</text>
+    </view>
+  </view>
+
+  <view class="footer">copyright all reserved</view>
+</view>

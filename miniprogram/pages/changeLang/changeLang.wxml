@@ -1,0 +1,15 @@
+<!--changeLang.wxml-->
+<view class="container lang-list">
+
+  <view class="title">翻译成</view>
+
+  <view class="item" wx:for="{{langList}}" wx:key="index"
+  data-tag="{{language.tag}}" data-lang="{{language.lang}}" data-index="{{language.index}}"
+  wx:for-item="language" bind:tap="onTapItem" hover-class="view-hover">
+    <view class="item-inner">
+      <text class="txt">{{language.tag}}</text>
+      <text class="icon" wx:if="{{index===curLang.index}}">xx</text>
+    </view>
+  </view>
+
+</view>

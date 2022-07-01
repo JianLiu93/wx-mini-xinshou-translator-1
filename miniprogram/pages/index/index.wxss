@@ -1,0 +1,61 @@
+/**index.wxss**/
+.title {
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333;
+  font-size: 44rpx;
+  margin-bottom: 40rpx;
+}
+
+.translate {
+  color: #8995a1;
+  font-size: 24rpx;
+  padding: 20rpx 40rpx;
+  display: flex;
+  align-items: center;
+}
+.translate .icon-right {
+  color: #888;
+}
+.translate .icon-down {
+  color: #8995a1;
+  font-size: 20rpx;
+}
+
+.input-area {
+  position: relative;
+}
+.textarea-wrap {
+  background: #fff;
+  border-bottom: 1px solid #c7cee0;
+}
+.textarea-wrap textarea {
+  background-color: #fff;
+  padding: 30rpx 0 30rpx 30rpx;
+  width: calc(100% - 48rpx);
+  margin: 0;
+  box-sizing: border-box;
+}
+.input-area .icon-close {
+  position: absolute;
+  right: 12rpx;
+  top: 20rpx;
+  z-index: 100;
+  font-size: 40rpx;
+  color: #888;
+}
+
+.output-area {
+  min-height: 80rpx;
+  padding: 40rpx;
+  background-color: #fff;
+}
+
+.output-area .text-title {
+  font-size: 28rpx;
+  color: #899;
+}
+
+.output-area .text-result {
+  padding: 20rpx 0;
+}

@@ -1,0 +1,1 @@
+"D:\Software\微信web开发者工具\cli.bat" cloud functions deploy --e cloud1-2g7dio6s6b1850e3 --n quickstartFunctions --r --project "D:\Codebase\wechat\xinshou-translator" --report_first --report
