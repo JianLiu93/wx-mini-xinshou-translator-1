@@ -28,17 +28,17 @@ App({
         'index': 1
       },
       {
-        'lang': 'ja',
+        'lang': 'jp',
         'tag': '日文',
         'index': 2
       },
       {
-        'lang': 'ko',
+        'lang': 'kor',
         'tag': '韩文',
         'index': 3
       },
       {
-        'lang': 'fr',
+        'lang': 'fra',
         'tag': '法文',
         'index': 4
       },
@@ -53,12 +53,12 @@ App({
         'index': 6
       },
       {
-        'lang': 'es',
+        'lang': 'spa',
         'tag': '西班牙文',
         'index': 7
       },
       {
-        'lang': 'ar',
+        'lang': 'ara',
         'tag': '阿拉伯文',
         'index': 8
       },

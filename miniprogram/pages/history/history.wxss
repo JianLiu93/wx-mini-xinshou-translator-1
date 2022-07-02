@@ -1,12 +1,22 @@
 /**history.wxss**/
 
 .title {
+  position: relative;
   font-family: PingFang SC;
   font-weight: 500;
   color: #333;
   font-size: 36rpx;
   text-align: center;
   margin-top: 30rpx;
+}
+.title .icon-delete {
+  position: absolute;
+  top: 0;
+  right: 24rpx;
+  z-index: 99;
+  font-size: 40rpx;
+  width: 40rpx;
+  height: 40rpx;
 }
 
 .history-list {
@@ -18,6 +28,7 @@
 
 .item {
   margin-top: 20rpx;
+  word-break: break-all;
 }
 
 .item .query {

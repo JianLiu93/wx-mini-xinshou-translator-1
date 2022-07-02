@@ -8,7 +8,7 @@
   bind:tap="onTapItem" hover-class="view-hover">
     <view class="item-inner">
       <text class="txt">{{language.tag}}</text>
-      <text class="icon" wx:if="{{index===curLang.index}}">x</text>
+      <image class="icon icon-checked" src="../../images/svg/checked.svg" wx:if="{{index===curLang.index}}" />
     </view>
   </view>
 

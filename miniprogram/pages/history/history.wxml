@@ -1,7 +1,10 @@
 <!--history.wxml-->
 <scroll-view class="container" scroll-y="{{true}}">
 
-  <view class="title">翻译历史记录</view>
+  <view class="title">
+    <text>翻译历史记录</text>
+    <image class="icon icon-delete" src="../../images/svg/delete.svg" bind:tap="onDelete" />
+  </view>
   <view class="history-list">
     <view class="item" wx:for="{{history}}" wx:key="index"
     bind:tap="onTapItem" data-query="{{item.query}}" data-lang="{{item.lang}}">

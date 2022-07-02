@@ -5,23 +5,41 @@
   font-weight: 500;
   color: #333;
   font-size: 32rpx;
-  margin-bottom: 40rpx;
+  padding: 40rpx 40rpx 20rpx 40rpx;
+  margin-bottom: 20rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.title>text {
+  display: inline-block;
+  padding-left: 20rpx;
+}
+
+.title .logo {
+  width: 100rpx;
+  height: 64rpx;
+  vertical-align: middle;
 }
 
 .translate {
   color: #8995a1;
-  font-size: 24rpx;
+  font-size: 28rpx;
   padding: 20rpx 40rpx;
   display: flex;
   align-items: center;
 }
-.translate .icon-right {
-  color: #888;
-}
-.translate .icon-down {
+
+.translate .icon {
+  display: inline-block;
   color: #8995a1;
   font-size: 20rpx;
 }
+.icon.icon-drop {
+  width: 32rpx;
+  height: 32rpx;
+  vertical-align: middle;
+ }
 
 .input-area {
   position: relative;
@@ -34,16 +52,17 @@
 .textarea-wrap textarea {
   background-color: #fff;
   padding: 30rpx 0 30rpx 30rpx;
-  width: calc(100% - 60rpx);
+  width: calc(100% - 68rpx);
   margin: 0;
 }
 .input-area .icon-close {
   position: absolute;
   right: 12rpx;
   top: 20rpx;
-  z-index: 100;
+  z-index: 99;
   font-size: 40rpx;
-  color: #888;
+  width: 40rpx;
+  height: 40rpx;
 }
 
 .output-area {

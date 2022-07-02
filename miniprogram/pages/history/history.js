@@ -12,9 +12,17 @@ Page({
   },
 
   onTapItem(e) {
+    let langObj = e.currentTarget.dataset.lang;
+    wx.setStorageSync('language', langObj);
+    app.globalData.curLang = langObj;
     wx.reLaunch({
       url: `/pages/index/index?query=${e.currentTarget.dataset.query}`
     });
   },
+
+  onDelete() {
+    wx.setStorageSync('history', []);
+    this.onShow();
+  }
 
 });

@@ -1,20 +1,23 @@
 <!--index.wxml-->
 <view class="container">
 
-  <view class="title">中文与多种语言互译，信手拈来，学习效率利器</view>
+  <view class="title">
+    <image class="logo" src="../../images/svg/translator.svg" />
+    <text>中文与多种语言互译，无须选择输入语言。译文信手拈来，学习效率利器</text>
+  </view>
 
   <view class="translate">
     <navigator url="/pages/changeLang/changeLang" hover-class="navigator-hover">
       <block>
-        <text class="first-bar">到{{curLang.tag}}</text>
-        <text class="icon">icon</text>
+        <text class="first-bar">翻译到{{curLang.tag}} </text>
+        <image class="icon icon-drop" src="../../images/svg/drop.svg" />
       </block>
     </navigator>
-  <!-- <image wx:if="{{power.showItem}}" class="power_info_less" src="../../images/arrow.svg"></image> -->
   </view>
+  <!-- <image wx:if="{{power.showItem}}" class="power_info_less" src="../../images/arrow.svg"></image> -->
 
   <view class="input-area">
-    <text class="icon-close" hidden="{{hideClearBtn}}" bind:tap="onTapClose">x</text>
+    <image class="icon icon-close" src="../../images/svg/close.svg" hidden="{{hideClearBtn}}" bind:tap="onTapClose">x</image>
     <view class="textarea-wrap">
       <textarea id="" placeholder="输入或复制文字，即刻翻译" placeholder-style="color:#c0c4cc"
       value="{{query}}" bind:input="onInput" bind:confirm="onConfirm" bind:blur="onConfirm"></textarea>
